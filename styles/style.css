@@ -1,0 +1,285 @@
+/* 1. pocisionamiento
+/* 2. modelo de caja (box model) */
+/* 3.tipografia */
+/* 4. temas visuales */
+/* 5.otros */
+/* */ 
+:root {
+    /* colores */
+    --dark: #171717;
+    --red-color: #A60303;
+    --orange-color: #F26021;
+    --orange-text:  #D16500;
+    --purple-color:#380019;
+    --off-white: #FAF8F7;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Viga', sans-serif;
+    font-family: 'News Cycle', sans-serif;
+}
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 50px;
+    text-align: center; 
+}
+
+.header nav{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between
+}
+
+.header .header-logotipo {
+    position: relative;
+    display: flex;
+    flex-direction:row;
+}
+.header .header-logotipo figure {
+    margin: 0px 8px 0px 16px;
+}
+.header .header-logotipo div p {
+    font-family: "Viga", sans-serif;
+    font-size: 1.6rem;
+    margin-top: 2px;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;   
+    /* text-align: center; */
+}
+.main .present {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0px 32px 0px;
+}
+.main .present h1{
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0px 8px 16px 8px;
+}
+.main .present .present-parrafo {
+    margin: 8px 8px 24px 16px;
+}
+.main .present .present-parrafo p {
+    font-family: News Cycle;
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding-bottom: 12px;
+}
+.main .present .present-fotoportada {
+    width: 100%;
+    min-width: 320px;
+    height: 500px;
+    background-image: url(../assets_ol/photo_portada.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.main .present-fotoportada p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    width: 150px;
+    height: 50px;
+    min-width: 150px;
+    max-width: 744px;
+    border-radius: 16px;
+    background-color: var(--red-color);
+    text-align: center;
+    margin: 240px 0px 0px 85px;
+    font-family: "Viga", sans-serif;
+    font-size: 28px;
+    color: var(--off-white);
+}
+
+.main .novedad {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0px 32px 0px;
+}
+.main .novedad h2 {
+    margin: 0px 8px 8px 8px;
+    font-family: "Viga", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+.main .novedad .novedad-producto-uno{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 16px 0px 16px ;
+}
+.main .novedad .novedad-producto-uno .novedad-producto-imagen {
+    width: 100%;
+    min-width: 288px;
+    height: 300px;
+    background-image: url(../assets_ol/photo1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    text-align: center;
+}
+.main .novedad .novedad-producto-uno .novedad-producto-imagen h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    width: 150px;
+    height: 50px;
+    min-width: 150px;
+    max-width: 744px;
+    border-radius: 16px;
+    background-color: var(--red-color);
+    text-align: center;
+    margin: 125px 0px 0px 89px;
+    font-family: "Viga", sans-serif;
+    font-size: 28px;
+    color: var(--off-white);
+}
+.main .novedad .novedad-producto .novedad-producto-nombre {
+    margin: 12px 0px 12px 0px;
+}
+.main .novedad .novedad-producto .novedad-producto-nombre p {
+    font-size: 2.0rem;
+    font-weight: 500;
+}
+
+.main .novedad .novedad-producto .novedad-producto-precio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.main .novedad .novedad-producto .novedad-producto-precio p {
+    font-size: 1.6rem;
+}
+.main .novedad .novedad-producto .novedad-producto-precio p:nth-child(1) {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+}
+.main .novedad .novedad-producto .novedad-producto-precio p:nth-child(2) {
+    text-decoration: line-through;
+}
+.main .productos {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0px 32px 0px;
+}
+.main .productos h2 {
+    margin: 0px 8px 16px 8px;
+    font-family: "Viga", sans-serif;
+    font-size: 2.0rem;
+    font-weight: 500;
+}
+.main .productos .productos-detalle-uno {
+    width: 100%;
+    min-width: 288px;
+    height: 300px;
+    background-image: url(../assets_ol/photo3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    text-align: center;
+}
+.main .productos .productos-detalle .productos-detalle-uno  h3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    width: 150px;
+    height: 50px;
+    min-width: 150px;
+    max-width: 744px;
+    border-radius: 16px;
+    background-color: var(--orange-color);
+    text-align: center;
+    margin: 0px 0px 0px 89px;
+    font-family: "Viga", sans-serif;
+    font-size: 28px;
+    color: var(--off-white);
+}
+.main .respaldo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    width: 100%;
+    margin: 12px 8px 24px 8px;
+    text-align: center;
+}
+.main .respaldo .respaldo-cajas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0px 12px 0px;
+}
+.main .respaldo .respaldo-cajas h4 {
+    font-size: 1.6rem;
+}
+.main .respaldo .respaldo-cajas p {
+    font-size: 1.4rem;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer h2 {
+    font-size: 2.0rem;
+    font-weight: 500;
+    font-family: "Viga", sans-serif;
+}
+.footer .footer-rrss-imagen img{
+    width: 35px;
+    height: 35px;
+    margin: 4px;
+}
+.footer .footer-copyright p {
+    font-size: 1.4rem;
+}
+.footer .footer-copyright figure img {
+    width: 16px;
+    height: 16px;
+}
+/* .news-cycle-regular {
+    font-family: "News Cycle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.news-cycle-bold {
+    font-family: "News Cycle", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.viga-regular {
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+} */

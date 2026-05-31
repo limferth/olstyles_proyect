@@ -32,6 +32,7 @@ body {
   font-family: var(--body);
   font-size: 1rem;
   line-height: 1.6;
+  font-weight: 501;
 }
 
 body.menu-open {
@@ -101,14 +102,18 @@ button {
 
 .brand__mark,
 .footer__brand img:first-child {
-  filter: invert(1);
+  /* filter: invert(1); */
+  width: 7%;
+  height: auto;
 }
 
-.brand__logo,
+/* .brand__logo,
 .footer__brand img:last-child,
 .hero__logo {
-  filter: invert(1);
-}
+  /* filter: invert(1);  */
+  /* width: 24%;
+  height: auto; */
+/* } */
 
 .nav__toggle {
   position: relative;
@@ -169,7 +174,7 @@ button {
   display: grid;
   align-content: center;
   gap: 24px;
-  padding: 96px 32px 32px;
+  padding: 96px 32px;
   color: var(--white);
   background: rgba(23, 23, 23, 0.98);
   transform: translateX(100%);
@@ -231,7 +236,7 @@ button {
   margin: 0 0 12px;
   color: var(--pink);
   font-family: var(--title);
-  font-size: 0.82rem;
+  font-size: 1.4rem;
   letter-spacing: 0;
   text-transform: uppercase;
 }
@@ -248,19 +253,19 @@ h2,
 h3 {
   font-family: var(--title);
   font-weight: 400;
-  line-height: 0.98;
+  line-height: 1.08;
   letter-spacing: 0;
 }
 
 h1 {
   max-width: 920px;
   margin-bottom: 18px;
-  font-size: clamp(3.2rem, 15vw, 8.4rem);
+  font-size: clamp(3.2rem, 6vw, 8.4rem);
 }
 
 h2 {
   margin-bottom: 18px;
-  font-size: clamp(2.3rem, 9vw, 5.2rem);
+  font-size: clamp(2.3rem, 4vw, 5.2rem);
 }
 
 h3 {
@@ -550,7 +555,7 @@ h3 {
   inset: 0;
   background:
     linear-gradient(180deg, rgba(23, 23, 23, 0.1), rgba(23, 23, 23, 0.88)),
-    url("../assets_ol/photo2.jpg") center / cover no-repeat;
+    url("https://i.imgur.com/tPB4IAR.jpeg") center / cover no-repeat;
   transform: scale(1.04);
 }
 
@@ -642,8 +647,8 @@ h3 {
 .socials a {
   display: grid;
   place-items: center;
-  width: 42px;
-  height: 42px;
+  width: 56px;
+  height: 56px;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--radius);
   background: rgba(255, 255, 255, 0.04);
@@ -681,6 +686,9 @@ h3 {
     opacity: 1;
     transform: none;
   }
+}
+.nav__menu a {
+  font-size: 1rem;
 }
 
 @media (min-width: 640px) {
@@ -733,6 +741,7 @@ h3 {
     color: rgba(255, 255, 255, 0.82);
     font-family: var(--body);
     font-size: 1rem;
+    font-weight: 700;
     transition: color 180ms ease;
   }
 

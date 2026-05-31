@@ -2,13 +2,13 @@ const products = [
   {
     name: "Training Core Tee",
     description: "Camiseta deportiva ligera para sesiones intensas y uso diario.",
-    image: "./assets_ol/photo1.jpg",
+    image: "https://i.imgur.com/i111zdT.jpeg",
     tag: "Nuevo"
   },
   {
     name: "Performance Fit Set",
     description: "Conjunto funcional con ajuste comodo para movilidad total.",
-    image: "./assets_ol/photo2.jpg",
+    image: "https://i.imgur.com/0BcjYgy.jpeg",
     tag: "Top"
   },
   {
@@ -20,8 +20,20 @@ const products = [
   {
     name: "Recovery Sport Layer",
     description: "Capa versatil para calentar, entrenar y mantener presencia.",
-    image: "./assets_ol/photo4.jpg",
+    image: "https://i.imgur.com/1JAwSre.jpeg",
     tag: "Pro"
+  },
+  {
+    name: "Zapatos deportivos de calidad",
+    description: "Practica tu deporte con los mejores Tenises,del mercado",
+    image: "https://i.imgur.com/xaSLneh.jpeg",
+    tag: "shoes"
+  },
+  {
+    name: "Poleras de compresion",
+    description: "Las poleras de compresion que es tu aliado favorito, para ganar",
+    image: "https://i.imgur.com/vFOkcCk.jpeg",
+    tag: "Estrella"
   }
 ];
 

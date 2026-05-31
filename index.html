@@ -1,110 +1,218 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Viga&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles/style.css">
-    <title>olstyles</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="OLSTYLES ofrece productos deportivos de calidad para alcanzar tu maximo rendimiento con estilo, personalizacion y confianza.">
+  <meta name="theme-color" content="#171717">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Viga&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="./assets_ol/photo_portada.jpg">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>OLSTYLES | You Don't Limits</title>
 </head>
 <body>
-    <header class="header">
-        <nav>
-                <div class="header-logotipo">
-                    <figure>
-                        <img src="/assets_ol/ISOTOPOol.svg" alt="logo">
-                    </figure>
-                    <div>
-                        <p>OLSTYLES</p>
-                    </div>
-                </div>
-                <figure>
-                    <img src="/assets_ol/Vectorburger_white.svg" alt="burger">
-                </figure>
-        </nav>
-    </header>
+  <header class="site-header" data-header>
+    <nav class="nav container" aria-label="Navegacion principal">
+      <a class="brand" href="#inicio" aria-label="OLSTYLES inicio">
+        <img src="./assets_ol/ISOTOPOol.svg" alt="" width="32" height="32" class="brand__mark">
+        <img src="./assets_ol/OLSTYLESolstyles.svg" alt="OLSTYLES" width="150" height="25" class="brand__logo">
+      </a>
 
-    <main class="main">
-        <section class="present">
-            <h1>Buscamos ser parte de ti, con motivacion y control para transformar tu vida</h1>
-            <div class="present-parrafo">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto molestias exercitationem consequuntur veritatis! Provident cupiditate molestias unde pariatur, quis impedit vel nisi nam ipsum quisquam dolorem fugit voluptas neque nobis?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nemo at cupiditate? Sed veritatis, maxime iusto iure ratione distinctio soluta cupiditate vitae, facilis placeat incidunt odio adipisci dolores, consequuntur molestiae.</p>
-            <p>Lorem Lorem ipsum dolor sit amet consectetur adipiss velit soluta tenetur corrupti mole tempora cupiditate hic veniam accusamus dolor quisqconsequuntur reprehenderit incidunt.</p>
-            </div>
-            <div class="present-fotoportada">
-                <p>VER MAS</p>
-            </div>
-        </section>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" data-menu-toggle>
+        <span class="nav__toggle-line"></span>
+        <span class="sr-only">Abrir menu</span>
+      </button>
 
-        <section class="novedad">
-            <h2>novedades de la semana</h2>
-            <div class="novedad-producto">
-                <div class="novedad-producto-uno">
-                    <div class="novedad-producto-imagen">
-                        <h3>OFERTA</h3>
-                    </div>
-                    <div class="novedad-producto-nombre">
-                        <p>POLERAS TERMICAS</p>
-                    </div>
-                    <div class="novedad-producto-precio">
-                        <p>$ 57.99</p>
-                        <p>$ 79.99</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <div class="nav__menu" id="nav-menu" data-menu>
+        <a href="#marca">Marca</a>
+        <a href="#valor">Valor</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+  </header>
 
-        <section class="productos">
-            <h2>NUESTROS PRODUCTOS</h2>
-            <div class="productos-detalle">  <!-- solo utilizarlo para table y desktop -->
-                <div class="productos-detalle-uno">
-                        <h3>JEANS</h3>
-                </div>
-            </div>
-        </section>
-
-        <section class="respaldo">
-            <div class="respaldo-cajas">
-                <figure>
-                    <img src="/assets_ol/devoluciondevol.svg" alt="imagen de devoluciones">
-                </figure>
-                <h4>DEVOLUCIONES</h4>
-                <P>faciles y sin problemas</P>
-            </div>
-            <div class="respaldo-cajas">
-                <figure>
-                    <img src="/assets_ol/candadometod_pago.svg" alt="imagen de metodos protegidos">
-                </figure>
-                <h4>PAGOS PROTEGIDOS</h4>
-                <P>faciles y sin problemas</P>
-            </div>
-            <div class="respaldo-cajas">
-                <figure>
-                    <img src="/assets_ol/dineropagos.svg" alt="imagen de metodos de pago">
-                </figure>
-                <h4>METODOS DE PAGO</h4>
-                <P>faciles y sin problemas</P>
-            </div>
-        </section>
-
-    </main>
-    <footer class="footer">
-        <h2>siguenos en nuestras redes sociales</h2>
-        <div class="footer-rrss">
-            <figure class="footer-rrss-imagen">
-                <img src="./assets_ol/facebook_icon.svg" alt="facebook">
-                <img src="./assets_ol/instagram_icon.svg" alt="instagram">
-                <img src="./assets_ol/linkedin_icon.svg" alt="linkedin">
-                <img src="./assets_ol/Twiter_icon.svg" alt="twitter">
-                <img src="./assets_ol/youtube_icon.svg" alt="youtube">
-            </figure>
+  <main>
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero__media" aria-hidden="true">
+        <picture>
+          <img src="./assets_ol/photo_portada.jpg" alt="" width="360" height="418" fetchpriority="high">
+        </picture>
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content container reveal">
+        <img class="hero__logo" src="./assets_ol/OLSTYLESolstyles.svg" alt="OLSTYLES" width="210" height="36">
+        <p class="eyebrow">You Don't Limits</p>
+        <h1 id="hero-title">Rendimiento, estilo y energia para superar tus limites.</h1>
+        <p class="hero__copy">Amplia gama de productos deportivos de calidad que brinda una experiencia unica para alcanzar el maximo rendimiento deportivo.</p>
+        <div class="hero__actions" aria-label="Acciones principales">
+          <a class="button button--primary" href="#productos">Explorar productos</a>
+          <a class="button button--ghost" href="#marca">Conocer la marca</a>
         </div>
-        <div class="footer-copyright">
-            <p> coyright @ 2024 All rights reserved | This template is made with </p> <figure><img src="https://e1.pngegg.com/pngimages/80/874/png-clipart-orange-heart.png" alt="corazon"></figure> <p>by Limferth </p>
+      </div>
+      <div class="hero__stats container" aria-label="Fortalezas de OLSTYLES">
+        <span>Calidad superior</span>
+        <span>Estilo personalizado</span>
+        <span>Rendimiento diario</span>
+      </div>
+    </section>
+
+    <section class="section about" id="marca">
+      <div class="container about__grid">
+        <div class="section__intro reveal">
+          <p class="eyebrow">Sobre nosotros</p>
+          <h2>Una marca creada para acompanarte en cada transformacion.</h2>
         </div>
-    </footer>
+        <div class="about__content reveal">
+          <p>OLSTYLES nace con una vision clara: unir equipamiento deportivo, diseno y motivacion para impulsar personas que entrenan con proposito.</p>
+          <p>Nuestra esencia combina excelencia, innovacion y pasion por el movimiento. Creamos una experiencia profesional, cercana y exclusiva para quienes buscan un estilo de vida saludable sin renunciar a su identidad.</p>
+          <p>Trabajamos para que cada producto eleve tu confianza, mejore tu rendimiento y forme parte real de tu rutina.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section value" id="valor">
+      <div class="container">
+        <div class="section__intro reveal">
+          <p class="eyebrow">Propuesta de valor</p>
+          <h2>Productos deportivos con presencia, respuesta y durabilidad.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span>01</span>
+            <h3>Calidad superior</h3>
+            <p>Materiales seleccionados para entrenar con comodidad, resistencia y una imagen impecable.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span>02</span>
+            <h3>Personalizacion</h3>
+            <p>Opciones pensadas para que cada atleta exprese su identidad y necesidades de uso.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span>03</span>
+            <h3>Garantia de satisfaccion</h3>
+            <p>Compra con respaldo, atencion clara y soporte durante todo el proceso.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span>04</span>
+            <h3>Diferenciacion</h3>
+            <p>Diseno energetico y profesional para destacar dentro y fuera del entrenamiento.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span>05</span>
+            <h3>Rendimiento deportivo</h3>
+            <p>Prendas y accesorios orientados a movilidad, seguridad y constancia.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section values" aria-labelledby="values-title">
+      <div class="container">
+        <div class="section__intro reveal">
+          <p class="eyebrow">Valores</p>
+          <h2 id="values-title">Lo que sostiene cada decision de OLSTYLES.</h2>
+        </div>
+        <div class="values__grid">
+          <article class="value-card reveal"><h3>Excelencia</h3><p>Obsesion por entregar productos y experiencias mejor resueltas.</p></article>
+          <article class="value-card reveal"><h3>Innovacion</h3><p>Buscamos nuevas formas de mejorar el rendimiento y la identidad visual.</p></article>
+          <article class="value-card reveal"><h3>Pasion</h3><p>Vivimos el deporte como motor de disciplina, energia y avance.</p></article>
+          <article class="value-card reveal"><h3>Integridad</h3><p>Comunicacion honesta, procesos claros y compromiso con cada cliente.</p></article>
+          <article class="value-card reveal"><h3>Exclusividad</h3><p>Una experiencia de marca cuidada, distintiva y memorable.</p></article>
+          <article class="value-card reveal"><h3>Impacto Social</h3><p>Impulsamos habitos saludables y comunidades mas activas.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section products" id="productos">
+      <div class="container">
+        <div class="section__intro reveal">
+          <p class="eyebrow">Productos destacados</p>
+          <h2>Seleccion inicial para entrenar con caracter.</h2>
+        </div>
+        <div class="product-grid" data-products aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section why">
+      <div class="container why__grid">
+        <div class="why__media reveal">
+          <img src="./assets_ol/photo4.jpg" alt="Producto deportivo OLSTYLES en uso" width="324" height="512" loading="lazy">
+        </div>
+        <div class="why__content reveal">
+          <p class="eyebrow">Por que elegirnos</p>
+          <h2>Una experiencia pensada para comprar con confianza.</h2>
+          <ul class="check-list">
+            <li><strong>Calidad:</strong> productos seleccionados para uso constante.</li>
+            <li><strong>Personalizacion:</strong> estilo alineado a tu identidad deportiva.</li>
+            <li><strong>Experiencia:</strong> comunicacion simple y foco en el detalle.</li>
+            <li><strong>Rendimiento:</strong> funcionalidad para entrenamientos reales.</li>
+            <li><strong>Soporte:</strong> acompanamiento antes y despues de la compra.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="manifesto" aria-labelledby="manifesto-title">
+      <div class="manifesto__bg" aria-hidden="true"></div>
+      <div class="manifesto__content container reveal">
+        <p class="eyebrow">Manifiesto</p>
+        <h2 id="manifesto-title">Somos parte de tu transformacion hacia un estilo de vida saludable.</h2>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="container">
+        <div class="section__intro reveal">
+          <p class="eyebrow">Testimonios</p>
+          <h2>Primeras voces de una comunidad en movimiento.</h2>
+        </div>
+        <div class="testimonial-grid">
+          <figure class="testimonial reveal">
+            <blockquote>"La calidad se siente desde el primer entrenamiento. Comodo, firme y con mucho estilo."</blockquote>
+            <figcaption>Valeria R. · Running</figcaption>
+          </figure>
+          <figure class="testimonial reveal">
+            <blockquote>"Me gusto que la marca entiende que entrenar tambien es expresion personal."</blockquote>
+            <figcaption>Marco S. · Fitness</figcaption>
+          </figure>
+          <figure class="testimonial reveal">
+            <blockquote>"La atencion fue clara y el producto llego listo para usar en mi rutina diaria."</blockquote>
+            <figcaption>Andrea M. · Training</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" id="contacto">
+      <div class="container final-cta__inner reveal">
+        <h2>Empieza hoy a construir tu mejor version.</h2>
+        <p>Conecta con OLSTYLES y prepara tu proxima compra deportiva.</p>
+        <a class="button button--primary" href="mailto:contacto@olstyles.com">Contactar ahora</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <a class="footer__brand" href="#inicio" aria-label="Volver al inicio">
+        <img src="./assets_ol/ISOTOPOol.svg" alt="" width="34" height="34">
+        <img src="./assets_ol/OLSTYLESolstyles.svg" alt="OLSTYLES" width="132" height="22">
+      </a>
+      <p>You Don't Limits</p>
+      <div class="socials" aria-label="Redes sociales">
+        <a href="#" aria-label="Facebook"><img src="./assets_ol/facebook_icon.svg" alt="" width="24" height="24" loading="lazy"></a>
+        <a href="#" aria-label="Instagram"><img src="./assets_ol/instagram_icon.svg" alt="" width="24" height="24" loading="lazy"></a>
+        <a href="#" aria-label="LinkedIn"><img src="./assets_ol/linkedin_icon.svg" alt="" width="24" height="24" loading="lazy"></a>
+        <a href="#" aria-label="Twitter"><img src="./assets_ol/Twiter_icon.svg" alt="" width="24" height="24" loading="lazy"></a>
+        <a href="#" aria-label="YouTube"><img src="./assets_ol/youtube_icon.svg" alt="" width="24" height="24" loading="lazy"></a>
+      </div>
+      <small>Copyright &copy; <span data-year></span> OLSTYLES. Todos los derechos reservados.</small>
+    </div>
+  </footer>
+
+  <script src="./js/main.js" defer></script>
 </body>
 </html>

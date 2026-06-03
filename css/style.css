@@ -107,13 +107,14 @@ button {
   height: auto;
 }
 
-/* .brand__logo,
+.brand__logo,
 .footer__brand img:last-child,
 .hero__logo {
   /* filter: invert(1);  */
-  /* width: 24%;
-  height: auto; */
-/* } */
+  width: 24%;
+  height: auto; 
+} 
+
 
 .nav__toggle {
   position: relative;
@@ -236,7 +237,7 @@ button {
   margin: 0 0 12px;
   color: var(--pink);
   font-family: var(--title);
-  font-size: 1.4rem;
+  font-size: clamp(0.76rem, 6vw, 1.6rem);
   letter-spacing: 0;
   text-transform: uppercase;
 }
@@ -260,12 +261,12 @@ h3 {
 h1 {
   max-width: 920px;
   margin-bottom: 18px;
-  font-size: clamp(3.2rem, 6vw, 8.4rem);
+  font-size: clamp(1.6rem, 6vw, 4rem);
 }
 
 h2 {
   margin-bottom: 18px;
-  font-size: clamp(2.3rem, 4vw, 5.2rem);
+  font-size: clamp(1.6rem, 4vw, 3.5rem);
 }
 
 h3 {
